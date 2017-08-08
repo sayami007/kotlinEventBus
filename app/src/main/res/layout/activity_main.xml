@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.imanoweb.calendarview.CustomCalendarView
+        android:id="@+id/cv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:calendarBackgroundColor="@color/calendarBackground"
+        app:calendarTitleTextColor="@color/monthColor"
+        app:currentDayOfMonthColor="#000"
+        app:dayOfMonthTextColor="@color/monthColor"
+
+        app:dayOfWeekTextColor="#fff"
+        app:disabledDayBackgroundColor="@color/calendarBackground"
+
+        app:disabledDayTextColor="#000"
+        app:selectedDayBackgroundColor="#50ff0000"
+        app:selectedDayTextColor="#000"
+
+        app:titleLayoutBackgroundColor="@color/calendarBackground"
+        app:weekLayoutBackgroundColor="@color/calendarBackground" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
